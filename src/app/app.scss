@@ -1,5 +1,5 @@
 .home{
-	background: color($colors, secondary);
+	background: color($colors, primary);
 	color: color($colors, light);
 	margin-top:30px;
 }
@@ -10,4 +10,15 @@
 
 .tabs-md .tab-button-icon{
 	color:#ccc;
-} 
+}
+
+.temp{
+	font-size: 90px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.location, .icon, .desc{
+	text-align: center;
+	font-size: 30px;
+}

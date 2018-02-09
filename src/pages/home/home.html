@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Iweather</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,7 +11,37 @@
               <h2 class="location">{{weather.display_location.full}}</h2>
               <div class="icon"><img src="{{weather.icon_url}}" alt=""></div>
               <h3 class="desc">{{weather.weather}}</h3>
-              <h1 class="temp">{{weather.temp_c}}</h1>
+              <h1 class="temp">{{weather.temp_c}}&deg;</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-100>
+              <ion-list>
+                <ion-item>
+                    <strong>Temperatura:</strong> {{weather.temp_c}}&deg; C
+                </ion-item>
+
+                <ion-item>
+                    <strong>Humidade Relativa:</strong> {{weather.relative_humidity}}
+                </ion-item>
+
+                <ion-item>
+                    <strong>Condensação:</strong> {{weather.dewpoint_c}}&deg; C
+                </ion-item>
+
+                <ion-item>
+                    <strong>Visibilidade:</strong> {{weather.visibility_km}}
+                </ion-item>
+
+<!--            <ion-item>
+                    <strong>Índice de calor:</strong> {{weather.heat_index_string}}
+                </ion-item> -->
+
+                <ion-item>
+                    <strong>Índice UV:</strong> {{weather.UV}}
+                </ion-item>
+
+              </ion-list>
           </ion-col>
         </ion-row>
     </ion-grid>
